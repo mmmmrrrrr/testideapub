@@ -1,9 +1,13 @@
 public class MethodTest01 {
     public static void main(String[] args) {
-        getCircle(5.2,1.3);
+        int[] arr={11,22,33,44,55};
+        printArr(arr);
     }
-    public static void getCircle(double length,double width){
-        double circle=(length+width)*2;
-        System.out.println(circle);
+    public static void printArr(int[] arr){
+        System.out.print("[");
+        for (int i = 0; i < arr.length-1; i++) {
+            System.out.print(arr[i]+", ");
+        }
+        System.out.print(arr[arr.length-1]+"]");
     }
 }
